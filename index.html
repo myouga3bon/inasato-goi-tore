@@ -4,17 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#38bdf8">
-<title>イナサト語彙トレ</title>
+<title>言葉アップ</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="語彙トレ">
+<meta name="apple-mobile-web-app-title" content="言葉アップ">
 <style>
+@font-face{font-family:"Kosugi";src:url(kosugi.woff2) format("woff2");font-display:swap}
 *{box-sizing:border-box}
-body{margin:0;background:#f0f9ff;color:#1e293b;font-family:"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;line-height:1.6}
+body{margin:0;background:#f0f9ff;color:#1e293b;font-family:"Kosugi","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;line-height:1.6}
 .wrap{max-width:640px;margin:0 auto;padding:16px 14px 40px}
 h1{font-size:22px;margin:8px 0 2px;color:#0369a1}
 .sub{font-size:13px;color:#64748b;margin:0 0 16px}
@@ -28,6 +29,10 @@ h1{font-size:22px;margin:8px 0 2px;color:#0369a1}
 .btn.sub2{background:#fce7f3;color:#be185d;margin-top:10px;font-size:15px}
 .btn:disabled{background:#cbd5e1;color:#fff}
 .hidden{display:none}
+.hero{background:#7dd3fc;border-radius:16px;margin:0 0 10px;padding:8px 10px 10px;text-align:center;position:relative}
+.hero-ears{display:block;height:74px;margin:0 auto}
+.hero h1{margin:2px 0 0;font-size:26px;color:#fff;letter-spacing:2px;font-weight:normal;text-shadow:0 0 1px #fff}
+.hero .btn.mini{position:absolute;top:8px;right:8px;width:auto}
 .head{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px}
 .head h1{margin:0;font-size:20px}
 .btn.mini{display:inline-block;width:auto;padding:4px 14px;font-size:13px;border-radius:999px}
@@ -83,7 +88,7 @@ h1{font-size:22px;margin:8px 0 2px;color:#0369a1}
 <button class="topbtn hidden" id="topBtn">▲ トップページ</button>
 
 <div id="setup">
-  <div class="head"><h1><img src="favicon-32.png" alt="" width="22" height="22" style="vertical-align:-4px;border-radius:5px;margin-right:6px">イナサト語彙トレ</h1><button class="btn mini" id="jitsuBtn">実力テスト</button></div>
+  <div class="hero"><svg class="hero-ears" viewBox="60 70 392 285" aria-hidden="true"><line x1="256" y1="342" x2="256" y2="92.0" stroke="#fff1c9" stroke-width="9.0" stroke-linecap="round"/><ellipse cx="232.6" cy="312.0" rx="30.0" ry="19.0" transform="rotate(28 232.6 312.0)" fill="#f9a8d4" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="279.4" cy="312.0" rx="30.0" ry="19.0" transform="rotate(-28 279.4 312.0)" fill="#fdba74" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="234.3" cy="266.0" rx="27.8" ry="17.8" transform="rotate(28 234.3 266.0)" fill="#fde68a" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="277.7" cy="266.0" rx="27.8" ry="17.8" transform="rotate(-28 277.7 266.0)" fill="#bbf7d0" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="236.0" cy="220.0" rx="25.6" ry="16.6" transform="rotate(28 236.0 220.0)" fill="#93c5fd" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="276.0" cy="220.0" rx="25.6" ry="16.6" transform="rotate(-28 276.0 220.0)" fill="#c4b5fd" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="237.7" cy="174.0" rx="23.4" ry="15.4" transform="rotate(28 237.7 174.0)" fill="#f9a8d4" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="274.3" cy="174.0" rx="23.4" ry="15.4" transform="rotate(-28 274.3 174.0)" fill="#fdba74" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="239.5" cy="128.0" rx="21.2" ry="14.2" transform="rotate(28 239.5 128.0)" fill="#fde68a" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="272.5" cy="128.0" rx="21.2" ry="14.2" transform="rotate(-28 272.5 128.0)" fill="#bbf7d0" stroke="#fff1c9" stroke-width="5.0"/><ellipse cx="256" cy="102.0" rx="14.0" ry="24.0" fill="#93c5fd" stroke="#fff1c9" stroke-width="5.0"/><line x1="122" y1="342" x2="122" y2="207.7" stroke="#fff1c9" stroke-width="7.6" stroke-linecap="round"/><ellipse cx="102.1" cy="316.5" rx="25.5" ry="16.1" transform="rotate(28 102.1 316.5)" fill="#fdba74" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="141.9" cy="316.5" rx="25.5" ry="16.1" transform="rotate(-28 141.9 316.5)" fill="#fde68a" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="103.6" cy="277.4" rx="23.6" ry="15.1" transform="rotate(28 103.6 277.4)" fill="#bbf7d0" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="140.4" cy="277.4" rx="23.6" ry="15.1" transform="rotate(-28 140.4 277.4)" fill="#93c5fd" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="105.0" cy="238.3" rx="21.8" ry="14.1" transform="rotate(28 105.0 238.3)" fill="#c4b5fd" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="139.0" cy="238.3" rx="21.8" ry="14.1" transform="rotate(-28 139.0 238.3)" fill="#f9a8d4" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="122" cy="216.2" rx="11.9" ry="20.4" fill="#c4b5fd" stroke="#fff1c9" stroke-width="4.2"/><line x1="390" y1="342" x2="390" y2="207.7" stroke="#fff1c9" stroke-width="7.6" stroke-linecap="round"/><ellipse cx="370.1" cy="316.5" rx="25.5" ry="16.1" transform="rotate(28 370.1 316.5)" fill="#bbf7d0" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="409.9" cy="316.5" rx="25.5" ry="16.1" transform="rotate(-28 409.9 316.5)" fill="#93c5fd" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="371.6" cy="277.4" rx="23.6" ry="15.1" transform="rotate(28 371.6 277.4)" fill="#c4b5fd" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="408.4" cy="277.4" rx="23.6" ry="15.1" transform="rotate(-28 408.4 277.4)" fill="#f9a8d4" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="373.0" cy="238.3" rx="21.8" ry="14.1" transform="rotate(28 373.0 238.3)" fill="#fdba74" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="407.0" cy="238.3" rx="21.8" ry="14.1" transform="rotate(-28 407.0 238.3)" fill="#fde68a" stroke="#fff1c9" stroke-width="4.2"/><ellipse cx="390" cy="216.2" rx="11.9" ry="20.4" fill="#fdba74" stroke="#fff1c9" stroke-width="4.2"/></svg><h1>言葉アップ</h1><button class="btn mini" id="jitsuBtn">実力テスト</button></div>
 
   <div class="card cmp">
     <div class="row"><span class="lb">種類</span><div class="pills" id="gType">
